@@ -15,6 +15,7 @@ import java.util.ArrayList;
 import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
 import modelo.Equipo;
 import modelo.Mantenimiento;
 import persistencia.exceptions.IllegalOrphanException;
@@ -26,7 +27,11 @@ import persistencia.exceptions.PreexistingEntityException;
  * @author Jhon
  */
 public class EquipoJpaController implements Serializable {
-
+    
+    public EquipoJpaController(){
+        this.emf = Persistence.createEntityManagerFactory("GIPLE_UVTULUAPU");
+    }
+    
     public EquipoJpaController(EntityManagerFactory emf) {
         this.emf = emf;
     }

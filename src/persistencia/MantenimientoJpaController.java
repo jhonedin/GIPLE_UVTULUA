@@ -11,6 +11,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Query;
 import javax.persistence.EntityNotFoundException;
+import javax.persistence.Persistence;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Root;
 import modelo.Equipo;
@@ -23,7 +24,11 @@ import persistencia.exceptions.PreexistingEntityException;
  * @author Jhon
  */
 public class MantenimientoJpaController implements Serializable {
-
+    
+    public MantenimientoJpaController(){
+        this.emf = Persistence.createEntityManagerFactory("GIPLE_UVTULUAPU");
+    }
+    
     public MantenimientoJpaController(EntityManagerFactory emf) {
         this.emf = emf;
     }

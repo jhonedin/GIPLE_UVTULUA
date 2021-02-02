@@ -11,6 +11,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Query;
 import javax.persistence.EntityNotFoundException;
+import javax.persistence.Persistence;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Root;
 import modelo.Usuario;
@@ -24,6 +25,10 @@ import persistencia.exceptions.NonexistentEntityException;
  */
 public class PrestamoJpaController implements Serializable {
 
+    public PrestamoJpaController(){
+        this.emf = Persistence.createEntityManagerFactory("GIPLE_UVTULUAPU");
+    }
+    
     public PrestamoJpaController(EntityManagerFactory emf) {
         this.emf = emf;
     }

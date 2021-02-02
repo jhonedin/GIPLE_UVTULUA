@@ -15,6 +15,7 @@ import java.util.ArrayList;
 import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
 import modelo.Administrador;
 import persistencia.exceptions.IllegalOrphanException;
 import persistencia.exceptions.NonexistentEntityException;
@@ -26,6 +27,10 @@ import persistencia.exceptions.PreexistingEntityException;
  */
 public class AdministradorJpaController implements Serializable {
 
+    public AdministradorJpaController(){
+        this.emf = Persistence.createEntityManagerFactory("GIPLE_UVTULUAPU");
+    }
+    
     public AdministradorJpaController(EntityManagerFactory emf) {
         this.emf = emf;
     }
