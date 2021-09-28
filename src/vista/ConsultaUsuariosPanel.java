@@ -29,7 +29,9 @@ public class ConsultaUsuariosPanel extends javax.swing.JPanel {
         programaComboBox.addItem("2710");
         programaComboBox.addItem("2711");
         programaComboBox.addItem("2712");
+        programaComboBox.addItem("2724");
         programaComboBox.addItem("3743");
+        programaComboBox.addItem("3753");
         rolComboBox.removeAllItems();
         rolComboBox.addItem("TODOS");
         rolComboBox.addItem("MATRICULADO");

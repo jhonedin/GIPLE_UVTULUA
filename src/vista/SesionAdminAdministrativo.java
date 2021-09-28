@@ -45,7 +45,7 @@ public class SesionAdminAdministrativo extends javax.swing.JPanel {
         asignaturaComboBox.addItem("MATEMATICAS ESPECIALES");
         asignaturaComboBox.addItem("MEDICIONES ELECTRONICAS");
         asignaturaComboBox.addItem("SISTEMAS ELECTROMECANICOS");
-        asignaturaComboBox.addItem("MICROPROCESADORE I");
+        asignaturaComboBox.addItem("MICROPROCESADORES I");
         asignaturaComboBox.addItem("MICROPROCESADORES II");
         asignaturaComboBox.addItem("SISTEMAS DE COMUNICACIONES");
         asignaturaComboBox.addItem("SISTEMAS AUTOMATICOS DE CONTROL");
@@ -54,6 +54,7 @@ public class SesionAdminAdministrativo extends javax.swing.JPanel {
         asignaturaComboBox.addItem("INTRUMENTACION ELECTRONICA");
         asignaturaComboBox.addItem("EXPERIMENTACION FISICA I");
         asignaturaComboBox.addItem("EXPERIMENTACION FISICA II");
+        asignaturaComboBox.addItem("EXPERIMENTACION FISICA III");
         asignaturaComboBox.addItem("LAB FISICA GENERAL I");
         asignaturaComboBox.addItem("LAB FISICA GENERAL II");
     }
@@ -207,7 +208,7 @@ public class SesionAdminAdministrativo extends javax.swing.JPanel {
         });
 
         botonRegistarDevolucion.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        botonRegistarDevolucion.setText("Registar Devolucion");
+        botonRegistarDevolucion.setText("Registrar Devolucion");
         botonRegistarDevolucion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 botonRegistarDevolucionActionPerformed(evt);
@@ -215,7 +216,7 @@ public class SesionAdminAdministrativo extends javax.swing.JPanel {
         });
 
         botonModificarUsuario.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        botonModificarUsuario.setText("Registar/Modificar Usuario");
+        botonModificarUsuario.setText("Registrar/Modificar Usuario");
         botonModificarUsuario.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 botonModificarUsuarioActionPerformed(evt);
@@ -239,7 +240,7 @@ public class SesionAdminAdministrativo extends javax.swing.JPanel {
         });
 
         botonRegistarModificarEquipo.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        botonRegistarModificarEquipo.setText("Registar/Modificar Equipo");
+        botonRegistarModificarEquipo.setText("Registrar/Modificar Equipo");
         botonRegistarModificarEquipo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 botonRegistarModificarEquipoActionPerformed(evt);
@@ -335,7 +336,7 @@ public class SesionAdminAdministrativo extends javax.swing.JPanel {
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                         .addComponent(botonListadoEquipos, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(botonConsultarEquipos, javax.swing.GroupLayout.DEFAULT_SIZE, 165, Short.MAX_VALUE)))
-                .addGap(0, 369, Short.MAX_VALUE))
+                .addGap(0, 363, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
                 .addGap(76, 76, 76)
                 .addComponent(jLabel7)
